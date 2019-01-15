@@ -1,0 +1,42 @@
+{
+  "name": "electday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
+    "build": "npx webpack --config webpack.config.js --mode development",
+    "serve": "better-npm-run build:serve"
+  },
+  "betterScripts": {
+    "build:serve": {
+      "command": "webpack --config webpack.config.js node server.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "better-npm-run": "^0.1.0",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "postcss": "^7.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0"
+  }
+}
